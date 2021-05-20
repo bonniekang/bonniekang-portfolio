@@ -1,0 +1,20 @@
+.intro {
+  display: flex;
+
+  .left {
+    flex: 0.6;
+    .icon {
+      font-size: 100px;
+    }
+    .text-box {
+      font-size: 45px;
+      :first-child {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.4;
+  }
+}

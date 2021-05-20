@@ -1,0 +1,23 @@
+.navbar {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #ffcc33;
+  color: white;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
