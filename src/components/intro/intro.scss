@@ -1,20 +1,57 @@
+@keyframes hello {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .intro {
   display: flex;
+  background-color: #ffcc33;
+  color: #343433;
 
   .left {
+    padding: 3rem 3rem 0 10rem;
     flex: 0.6;
     .icon {
       font-size: 100px;
+      display: inline-block !important;
+      animation: 1s ease-in-out infinite hello;
     }
     .text-box {
-      font-size: 45px;
+      font-size: 30px;
+      text-align: end;
       :first-child {
         font-size: 60px;
+      }
+      .text-2 {
+        padding-top: 2rem;
+        line-height: 50px;
+      }
+      .text-3 {
+        font-weight: 200;
+        line-height: 40px;
       }
     }
   }
 
   .right {
     flex: 0.4;
+    display: flex;
+    align-items: center;
+    .scroll {
+      width: auto !important;
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
+      text-orientation: sideways-right;
+      font-style: normal !important;
+      font-weight: 700;
+      letter-spacing: 10px;
+    }
   }
 }
