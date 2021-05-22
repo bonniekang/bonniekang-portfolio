@@ -13,7 +13,7 @@
     }
     .border {
       width: 70%;
-      border-bottom: 2px dashed #ffcc33;
+      border-bottom: 3px dashed #ffcc33;
     }
   }
 
@@ -24,8 +24,20 @@
     align-items: center;
     .project {
       margin: 4rem 0;
+      padding: 2rem;
+      border-left: 2px dashed #ffcc33;
+
+      &:hover {
+        box-shadow: 40px -30px 1px #ffcc33;
+      }
+      &:first-child {
+        margin-top: 10rem;
+      }
       .img-container {
         width: 700px;
+        height: 370px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
         img {
           max-width: 100%;
           border-radius: 10px;
