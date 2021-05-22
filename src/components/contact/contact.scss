@@ -17,4 +17,25 @@
       border-bottom: 3px dashed white;
     }
   }
+  .content {
+    color: #333;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: #333;
+      padding: 1rem 3rem;
+      border: 3px solid #333;
+      &:hover {
+        border-color: white;
+      }
+    }
+    h3,
+    h1 {
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+  }
 }
