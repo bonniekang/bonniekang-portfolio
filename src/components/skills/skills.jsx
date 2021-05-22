@@ -7,44 +7,29 @@ export default function Skills() {
                 <h1>SKILLS</h1>
                 <div className="border"></div>
             </div>
-            <h3>Here is a small collection of my most relevant skills,</h3>
+            <div className="skills-container">
             <div className="skill-box">
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>Ruby on Rails</p>
+                <div className="skill devicon-ruby-plain-wordmark colored">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>Javascript</p>
+                <div className="skill devicon-rails-plain-wordmark colored">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>React</p>
+                <div className="skill devicon-javascript-plain">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>Redux</p>
+                <div className="skill devicon-react-original-wordmark colored">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>HTML</p>
+                <div className="skill devicon-redux-original colored">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>CSS</p>
+                <div className="skill devicon-html5-plain-wordmark colored">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>Bootstrap</p>
+                <div className="skill devicon-css3-plain-wordmark colored">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>TailwindCSS</p>
+                <div className="skill devicon-bootstrap-plain-wordmark colored">
                 </div>
-                <div className="skill">
-                    <img src="" alt=""/>
-                    <p>SQL(Postgres)</p>
+                <div className="skill devicon-postgresql-plain-wordmark colored">
                 </div>
+                <div className="skill devicon-git-plain-wordmark colored">
+                </div>
+            </div>
             </div>
         </div>
     )

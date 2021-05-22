@@ -17,7 +17,20 @@
       border-bottom: 3px dashed white;
     }
   }
-  .skill-box {
-    color: #343433;
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    .skill-box {
+      padding-top: 3rem;
+      color: #343433;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      width: 60%;
+      .skill {
+        font-size: 60px;
+        padding: 1rem 0;
+        justify-self: center;
+      }
+    }
   }
 }
