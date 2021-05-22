@@ -3,6 +3,8 @@ import Intro from "./components/intro/intro"
 import Works from "./components/works/works"
 import Contact from "./components/contact/contact"
 import './app.scss'
+import Skills from "./components/skills/skills"
+import About from "./components/about/about"
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar/>
       <div className="section">
         <Intro />
+        <About />
+        <Skills />
         <Works />
         <Contact />
       </div>
