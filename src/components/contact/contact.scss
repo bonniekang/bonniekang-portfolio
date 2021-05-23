@@ -38,4 +38,21 @@
       font-weight: 500;
     }
   }
+  .icons {
+    margin: 3rem 0 5rem 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: #333;
+      &:hover {
+        color: white;
+      }
+    }
+    .icon {
+      font-size: 40px;
+      padding: 1rem;
+    }
+  }
 }

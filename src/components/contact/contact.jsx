@@ -10,9 +10,13 @@ export default function Intro() {
                     <div className="border"></div>
                 </div>
                 <div className="content">
-                    <h3>That's all, now I would like to hear from you!</h3>
                     <h1>LET'S CONNECT !</h1>
+                    <h3>That's all, now I would like to hear from you!</h3>
                     <a href="mailto:jihye59kang@gmail.com?subject=Hello!"><h2>jihye59kang@gmail.com</h2></a>
+                </div>
+                <div className="icons">
+                    <a href="linkedin.com/in/bonniek0827"><div className="icon devicon-linkedin-plain"></div></a>
+                    <a href="github.com/bonniekang"><div className="icon devicon-github-original"></div></a>
                 </div>
             </div>
         </div>

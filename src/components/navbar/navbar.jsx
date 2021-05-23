@@ -25,7 +25,6 @@ export default function Navbar() {
                     <div id="lineHead"></div>
                 </div>
                 <div className="right">
-                    <a href="#about">ABOUT ME</a>
                     <a href="#skills">SKILLS</a>
                     <a href="#works">PROJECTS</a>
                     <a href="#contact">CONTACT</a>
