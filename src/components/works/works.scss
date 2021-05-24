@@ -1,15 +1,24 @@
+@import "../../global.scss";
+
 .wrapper {
   .title {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mobile {
+      margin-top: 1rem;
+    }
     h1 {
       padding: 4rem 2rem;
       font-size: 45px;
       -webkit-text-fill-color: white;
       -webkit-text-stroke-color: #333;
       -webkit-text-stroke-width: 2px;
+      @include mobile {
+        font-size: 25px;
+        padding: 1rem;
+      }
     }
     .border {
       width: 70%;
@@ -26,18 +35,35 @@
       margin: 4rem 0;
       padding: 2rem;
       border-left: 2px dashed #ffcc33;
-
+      width: 80%;
+      @include mobile {
+        margin: 2rem;
+        padding: 1rem;
+        border-left: none;
+        border-right: 2px dashed #ffcc33;
+        border-bottom: 2px dashed #ffcc33;
+      }
       &:hover {
         box-shadow: 40px -30px 1px #ffcc33;
+        @include mobile {
+          box-shadow: none;
+        }
       }
       &:first-child {
         margin-top: 10rem;
+        @include mobile {
+          margin-top: 5rem;
+        }
       }
       .img-container {
         width: 700px;
         height: 370px;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
+        @include mobile {
+          width: 90%;
+          height: 350px;
+        }
         img {
           max-width: 100%;
           border-radius: 10px;

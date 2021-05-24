@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .navbar {
   height: 120px;
   width: 100%;
@@ -10,10 +12,16 @@
   .wrapper1 {
     padding: 10px 30px;
     display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
     .left {
       display: flex;
       align-items: center;
       margin-right: 2rem;
+      @include mobile {
+        margin: 1rem 0;
+      }
       a {
         text-decoration: none;
         color: white;
@@ -41,10 +49,14 @@
     padding: 10px 30px;
     display: flex;
     justify-content: flex-end;
+    @include mobile {
+      display: none;
+    }
     .left {
       display: flex;
       align-items: center;
       position: relative;
+
       #line {
         width: 300px;
         border: 1px dashed #333;

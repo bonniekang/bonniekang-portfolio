@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 @keyframes hello {
   0% {
     transform: rotate(0deg);
@@ -18,29 +20,50 @@
   .left {
     padding: 3rem 3rem 0 10rem;
     flex: 0.6;
+    @include mobile {
+      flex: 1;
+      padding: 20px;
+    }
     .icon {
       font-size: 100px;
       display: inline-block !important;
       animation: 1s ease-in-out infinite hello;
+      @include mobile {
+        font-size: 50px;
+      }
     }
     .text-box {
       font-size: 30px;
       text-align: end;
       :first-child {
         font-size: 60px;
+        @include mobile {
+          font-size: 20px;
+        }
       }
       .text-2 {
         padding-top: 2rem;
         line-height: 50px;
+        @include mobile {
+          font-size: 17px;
+          line-height: 20px;
+        }
       }
       .text-3 {
         font-weight: 200;
         line-height: 40px;
+        @include mobile {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
       a {
         text-decoration: underline;
         color: #343433;
         font-size: 25px;
+        @include mobile {
+          font-size: 17px;
+        }
       }
     }
   }
@@ -49,6 +72,9 @@
     flex: 0.4;
     display: flex;
     align-items: center;
+    @include mobile {
+      display: none;
+    }
     .scroll {
       width: auto !important;
       transform: rotate(180deg);

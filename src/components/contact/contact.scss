@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .contact {
   background-color: #ffcc33;
   .title {
@@ -5,12 +7,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mobile {
+      margin-top: 1rem;
+    }
     h1 {
       padding: 4rem 2rem;
       font-size: 45px;
       -webkit-text-fill-color: #ffcc33;
       -webkit-text-stroke-color: white;
       -webkit-text-stroke-width: 2px;
+      @include mobile {
+        font-size: 25px;
+        padding: 1rem;
+      }
     }
     .border {
       width: 70%;
@@ -28,8 +37,16 @@
       color: #333;
       padding: 1rem 3rem;
       border: 3px solid #333;
+      @include mobile {
+        padding: 10px 1rem;
+      }
       &:hover {
         border-color: white;
+      }
+      h2 {
+        @include mobile {
+          font-size: 17px;
+        }
       }
     }
     h3,
@@ -37,12 +54,25 @@
       margin-bottom: 30px;
       font-weight: 500;
     }
+    h1 {
+      @include mobile {
+        font-size: 17px;
+      }
+    }
+    h3 {
+      @include mobile {
+        font-size: 15px;
+      }
+    }
   }
   .icons {
     margin: 3rem 0 5rem 0;
     color: #333;
     display: flex;
     justify-content: center;
+    @include mobile {
+      margin: 10px;
+    }
     a {
       text-decoration: none;
       color: #333;
@@ -53,6 +83,9 @@
     .icon {
       font-size: 40px;
       padding: 1rem;
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
 }
