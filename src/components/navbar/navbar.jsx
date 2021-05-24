@@ -12,10 +12,10 @@ export default function Navbar() {
                         <a href="mailto:jihye59kang@gmail.com?subject=Hello!">Email</a> 
                     </div>
                     <div className="itemContainer">
-                        <a href="linkedin.com/in/bonniek0827">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/bonniek0827/" target="blank">LinkedIn</a>
                     </div>
                     <div className="itemContainer">
-                        <a href="github.com/bonniekang">Github</a>
+                        <a href="https://github.com/bonniekang" target="blank">Github</a>
                     </div>
                 </div>
             </div>
