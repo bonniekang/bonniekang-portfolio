@@ -19,6 +19,12 @@ export default function Skills() {
                 </div>
                 <div className="skill devicon-redux-original colored">
                 </div>
+                <div className="skill devicon-nodejs-plain-wordmark colored">
+                </div>
+                <div className="skill devicon-express-original-wordmark colored">
+                </div>
+                <div className="skill devicon-mongodb-plain-wordmark colored">
+                </div>
                 <div className="skill devicon-html5-plain-wordmark colored">
                 </div>
                 <div className="skill devicon-css3-plain-wordmark colored">
