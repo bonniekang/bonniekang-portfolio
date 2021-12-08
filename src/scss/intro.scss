@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@import "../global.scss";
 
 @keyframes hello {
   0% {
@@ -14,7 +14,6 @@
 
 .intro {
   display: flex;
-  background-color: #ffcc33;
   color: #343433;
 
   .left {
@@ -71,18 +70,8 @@
   .right {
     flex: 0.4;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    @include mobile {
-      display: none;
-    }
-    .scroll {
-      width: auto !important;
-      transform: rotate(180deg);
-      writing-mode: vertical-rl;
-      text-orientation: sideways-right;
-      font-style: normal !important;
-      font-weight: 700;
-      letter-spacing: 10px;
-    }
+    justify-content: center;
   }
 }

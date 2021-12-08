@@ -4,7 +4,7 @@
   .section {
     width: 100%;
     height: calc(100vh - 120px);
-    background-color: white;
+
     position: relative;
     top: 120px;
     scroll-behavior: smooth;
@@ -20,4 +20,9 @@
       scroll-snap-align: start;
     }
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

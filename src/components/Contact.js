@@ -1,4 +1,4 @@
-import "./contact.scss"
+import "../scss/contact.scss";
 
 export default function Intro() { 
 
