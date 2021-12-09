@@ -1,14 +1,10 @@
-import "../scss/contact.scss";
+import "../scss/about.scss";
 
 export default function Intro() { 
 
     return (
         <div className="contact" id="contact">
             <div className="c-wrapper">
-                <div className="title">
-                    <h1>CONTACT</h1>
-                    <div className="border"></div>
-                </div>
                 <div className="content">
                     <h1>LET'S CONNECT !</h1>
                     <h3>That's all, now I would like to hear from you!</h3>

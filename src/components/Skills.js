@@ -3,10 +3,6 @@ import "../scss/skills.scss";
 export default function Skills() {
     return (
         <div className="skills" id="skills">
-            <div className="skill-title">
-                <h1>SKILLS</h1>
-                <div className="border"></div>
-            </div>
             <div className="skills-container">
             <div className="skill-box">
                 <div className="skill devicon-ruby-plain-wordmark colored">

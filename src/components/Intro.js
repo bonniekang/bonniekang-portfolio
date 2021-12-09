@@ -12,10 +12,22 @@ export default function Intro() {
                 </div>
             </div>
             <div className="right">
-                <a href="assets/Bonnie_Kang_CV.pdf" target="_blank" >View my resume</a>
-                <a href="mailto:jihye59kang@gmail.com?subject=Hello!">Email</a> 
-                <a href="https://www.linkedin.com/in/bonniek0827/" target="blank">LinkedIn</a>
-                <a href="https://github.com/bonniekang" target="blank">Github</a>
+                <div className="personal-info-box">
+                    <div>
+                        <img src="assets/selfie.JPG" alt=""/>
+                    </div>
+                    <div>
+                        <div className="name">
+                            Jihye Bonnie Kang
+                        </div>
+                        <div className="socials">
+                            <a href="assets/Bonnie_Kang_CV.pdf" target="_blank" >CV</a>
+                            <a href="mailto:jihye59kang@gmail.com?subject=Hello!">Email</a> 
+                            <a href="https://www.linkedin.com/in/bonniek0827/" target="blank">LinkedIn</a>
+                            <a href="https://github.com/bonniekang" target="blank">Github</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

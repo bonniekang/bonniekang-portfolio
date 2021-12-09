@@ -28,8 +28,9 @@
   .skills-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     .skill-box {
-      padding-top: 3rem;
+      padding: 10rem;
       color: #343433;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
