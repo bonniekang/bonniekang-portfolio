@@ -15,12 +15,14 @@
 .intro {
   display: flex;
   color: #343433;
-
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
   .left {
     padding: 3rem 3rem 0 10rem;
     flex: 0.6;
     @include mobile {
-      flex: 1;
       padding: 20px;
     }
     .icon {
@@ -28,16 +30,16 @@
       display: inline-block !important;
       animation: 1s ease-in-out infinite hello;
       @include mobile {
-        font-size: 50px;
+        font-size: 60px;
       }
     }
     .text-box {
       font-size: 30px;
       text-align: end;
       :first-child {
-        font-size: 60px;
+        font-size: 55px;
         @include mobile {
-          font-size: 20px;
+          font-size: 25px;
         }
       }
       .text-2 {
@@ -52,7 +54,7 @@
         font-weight: 200;
         line-height: 40px;
         @include mobile {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 20px;
         }
       }
@@ -71,6 +73,9 @@
     flex: 0.4;
     display: flex;
     align-items: center;
+    @include mobile {
+      margin-bottom: 4rem;
+    }
     .personal-info-box {
       display: flex;
       align-items: center;
@@ -90,8 +95,10 @@
         #fbd786,
         #c6ffdd
       ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
       opacity: 0.9;
+      @include mobile {
+        width: 100%;
+      }
       &:hover {
         background: #fbd786; /* fallback for old browsers */
         background: -webkit-linear-gradient(

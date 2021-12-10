@@ -1,90 +1,34 @@
 @import "../global.scss";
 
-.contact {
-  .title {
-    margin-top: 5rem;
+.about-container {
+  display: flex;
+  align-items: center;
+  .about-box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
     @include mobile {
-      margin-top: 1rem;
-    }
-    h1 {
-      padding: 4rem 2rem;
-      font-size: 45px;
-      -webkit-text-fill-color: #ffcc33;
-      -webkit-text-stroke-color: white;
-      -webkit-text-stroke-width: 2px;
-      @include mobile {
-        font-size: 25px;
-        padding: 1rem;
-      }
-    }
-    .border {
-      width: 70%;
-      border-bottom: 3px dashed white;
+      padding: 35rem 0 10rem 0;
+      display: block;
     }
   }
-  .content {
-    color: #333;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    a {
-      text-decoration: none;
-      color: #333;
-      padding: 1rem 3rem;
-      border: 3px solid #333;
-      @include mobile {
-        padding: 10px 1rem;
-      }
-      &:hover {
-        border-color: white;
-      }
-      h2 {
-        @include mobile {
-          font-size: 17px;
-        }
-      }
-    }
-    h3,
-    h1 {
-      margin-bottom: 30px;
-      font-weight: 500;
-    }
-    h1 {
-      @include mobile {
-        font-size: 17px;
-      }
-    }
-    h3 {
-      @include mobile {
-        font-size: 15px;
-      }
-    }
+}
+
+p {
+  padding: 10px 30px;
+  font-size: 20px;
+  line-height: 2rem;
+  font-weight: 200;
+  @include mobile {
+    font-size: 15px;
   }
-  .icons {
-    margin: 3rem 0 5rem 0;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    @include mobile {
-      margin: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: #333;
-      &:hover {
-        color: white;
-      }
-    }
-    .icon {
-      font-size: 40px;
-      padding: 1rem;
-      @include mobile {
-        font-size: 20px;
-      }
-    }
+  .first {
+    display: inline;
+    font-size: 30px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(#fbd786, #f7797d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

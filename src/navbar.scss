@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 header {
   color: #343433;
   position: fixed;
@@ -10,6 +12,10 @@ header {
   align-items: center;
   justify-content: center;
   z-index: 10;
+  @include mobile {
+    font-size: 15px;
+    width: 90%;
+  }
 }
 
 ul {
@@ -44,4 +50,7 @@ li {
   -webkit-text-fill-color: #343433;
   -webkit-text-stroke-color: #343433;
   -webkit-text-stroke-width: 0;
+  @include mobile {
+    border-bottom: 10px solid;
+  }
 }

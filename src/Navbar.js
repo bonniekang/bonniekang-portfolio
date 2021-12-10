@@ -7,7 +7,7 @@ const Navbar = withRouter(({location: { pathname }}) => {
         <header>
             <ul>
                 <li>
-                    <NavLink to="/home" activeClassName="active" className="nav">BONNIE KANG</NavLink>
+                    <NavLink to="/home" activeClassName="active" className="nav">👩🏻‍💻 BONNIE KANG</NavLink>
                 </li>
                 <li>
                     <NavLink to="/about" activeClassName="active"  className="nav">ABOUT</NavLink>
