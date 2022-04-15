@@ -2,9 +2,25 @@ import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom'
 import './navbar.scss'
 
+const content = {
+    english: {
+        lang: "English",
+        flag: '🇬🇧'
+    },
+    korean: {
+        lang: "Korean",
+        flag: '🇰🇷'
+    }
+}
+
 const Navbar = withRouter(({location: { pathname }}) => {
+
+    const { search, flag } = content[0];
     return(
         <header>
+            <button>
+                <span>{flag}</span>
+            </button>
             <ul>
                 <li>
                     <NavLink to="/home" activeClassName="active" className="nav">👩🏻‍💻 BONNIE KANG</NavLink>
